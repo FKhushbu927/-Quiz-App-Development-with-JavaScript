@@ -43,7 +43,7 @@ const questions = [
             { text: "South Korea", correct: false },
 
         ]
-    },
+    }
 ];
 
 const questionElement = document.getElementById("question");
@@ -93,6 +93,7 @@ function selectAnswer(e) {
 
     if (isCorrect) {
         selectedBtn.classList.add("correct");
+        totalScore++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -105,6 +106,27 @@ function selectAnswer(e) {
     });
 
     nextButton.style.display = "block";
+}
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
+});
+function showScore(){
+    resetState();
+    questionElement.innerHTML = `You scored ${totalScore} out of ${questions.length} !`;
+    nextButton.innerHTML = "play again";
+    nextButton.style.display = "block"; 
+}
+function handleNextButton(){
+        currentQuestionIndex++;
+        if(currentQuestionIndex < questions.length){
+            showQuestion();
+        }else{
+            showScore();
+        }
 }
 
 

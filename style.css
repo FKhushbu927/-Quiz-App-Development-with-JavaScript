@@ -49,11 +49,13 @@ body {
     font-size: 20px;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background-color: #222;
     color: #ffff;
 }
-
+.btn:disabled{
+    cursor: no-drop;
+}
 #next-btn {
     background: #001e4d;
     color: #fff;
@@ -65,7 +67,7 @@ body {
     padding: 8px;
     margin: 20px auto 0;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 
 .correct {
