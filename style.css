@@ -1,41 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #001e4d;
 }
-.quiz-app{
-     background-color: #ffff;
-     width: 90%;
-     max-width: 600px;
-     margin: 100px auto 0;
-     border-radius: 10px;
-     padding: 40px;
+
+.quiz-app {
+    background-color: #ffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 40px;
 }
 
-.quiz-app h2{
-   font-size: 25px;
-   color: #001e4d;
-   font-weight: 600;
-   border-bottom: 1px solid #333;
-   padding-bottom: 30px;
+.quiz-app h2 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
 }
 
-.quiz h3{
+.quiz h3 {
     font-size: 18px;
     color: #001e4d;
     font-weight: 600;
     padding-bottom: 30px;
     padding-top: 20px;
- }
+}
 
- .btn{
+.btn {
     background-color: #fff;
-    color:  #333;
+    color: #333;
     font-weight: 500;
     width: 100%;
     border: 1px solid #222;
@@ -46,46 +47,40 @@ body{
     cursor: pointer;
     transition: 0.3s all;
     font-size: 20px;
- }
-.btn:hover{
-        background-color: #222;
-        color:  #ffff;
-    }
+}
 
-    #next-btn{
-        background: #001e4d;
-        color: #fff;
-        font-weight: 600;
-        font-size: 20px;
-        width: 120px;
-        border: 0;
-        border-radius: 4px;
-        padding: 8px;
-        margin: 20px auto 0;
-        cursor: pointer;
-        display: none;
-    }
+.btn:hover {
+    background-color: #222;
+    color: #ffff;
+}
 
-    .correct{
-        background: #09d203;
-    }
-    .incorrect{
-        background: #fd163c;
-    }
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    width: 120px;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+}
 
+.correct {
+    /* background: #87e161;
+        border: 0; */
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
 
+.incorrect {
+    /* background: #fa8094;
+        border: 0; */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f;
+}
